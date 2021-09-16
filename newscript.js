@@ -66,15 +66,18 @@ for(let i=0; i < imgTag.length; i++){
 btnMessage.addEventListener("click",()=>{
     if(displayMood.innerHTML === "Sad"){
         displayMessage.style.display = "block";
+        displayMessage.style.color = "red";
         displayMessage.innerHTML = `You need a vacation <br/>
         <img src="./myimages/beach.jpg" alt="beach" class="beachimg">`;
     }else  if(displayMood.innerHTML === "Stressed"){
         displayMessage.style.display = "block";
+        displayMessage.style.color = "yellow";
         displayMessage.innerHTML = `You need a sleep <br/>
-        <img src="./myimages/beach.jpg" alt="beach" class="beachimg">`;
+        <img src="./myimages/sleep.jpg" alt="beach" class="beachimg">`;
     }else  if(displayMood.innerHTML === "Happy"){
         displayMessage.style.display = "block";
-        displayMessage.innerHTML = `You need a party <br/>
-        <img src="./myimages/beach.jpg" alt="beach" class="beachimg">`;
+        displayMessage.style.color = "green";
+        displayMessage.innerHTML = `Let's go a party <br/>
+        <img src="./myimages/party.jpg" alt="beach" class="beachimg">`;
     }
 })
